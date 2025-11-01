@@ -1,5 +1,5 @@
 
 output "api_endpoint" {
-  value = aws_apigatewayv2_api.this.api_endpoint
-  description = "URL de l'API Gateway"
+  description = "Placeholder URL for the API Gateway (stub module)"
+  value       = "https://${var.name}.local"
 }
