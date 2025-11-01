@@ -1,4 +1,5 @@
-output "invoke_url" {
-  description = "A placeholder URL for the API gateway (stub module)"
-  value       = "https://${var.name}.local"
+
+output "api_endpoint" {
+  value = aws_apigatewayv2_api.this.api_endpoint
+  description = "URL de l'API Gateway"
 }
