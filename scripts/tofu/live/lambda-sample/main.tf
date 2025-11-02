@@ -28,5 +28,5 @@ module "gateway" {
   # During local development and tests we use a reachable placeholder
   # so validation steps can perform HTTP requests. Override this in
   # real deployments to expose the actual API endpoint.
-  endpoint_override = "https://example.com"
+   endpoint_override = ""
 }
