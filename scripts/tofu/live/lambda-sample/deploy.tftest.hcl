@@ -18,8 +18,8 @@ run "validate" {
     endpoint = "https://example.com"
   }
 
-  assert {
-    condition     = data.http.test_endpoint.status_code == 200
-    error_message = "Unexpected status: ${data.http.test_endpoint.status_code}"
-  }
+assert {
+condition = data.http.test_endpoint.response_body == "Fundamentals of DevOps!"
+error_message = "Unexpected body: ${data.http.test_endpoint.response_body}"
+}
 }
