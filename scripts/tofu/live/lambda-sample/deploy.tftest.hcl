@@ -15,7 +15,7 @@ run "validate" {
     # but since the live stack uses stub modules in this repo, point to example.com
     # and only assert on HTTP 200 to keep the test meaningful while remaining
     # resilient in local development.
-    endpoint = https://${var.name}.local
+    endpoint = ""
   }
   assert {
     condition     = data.http.test_endpoint.status_code == 200
