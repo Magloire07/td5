@@ -25,4 +25,8 @@ module "gateway" {
   name = var.name
   function_arn       = module.function.function_arn
   api_gateway_routes = ["GET /"]
+  # During local development and tests we use a reachable placeholder
+  # so validation steps can perform HTTP requests. Override this in
+  # real deployments to expose the actual API endpoint.
+  endpoint_override = "https://example.com"
 }

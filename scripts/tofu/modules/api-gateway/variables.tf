@@ -13,3 +13,9 @@ variable "api_gateway_routes" {
   type        = list(string)
   default     = []
 }
+
+variable "endpoint_override" {
+  description = "Optional: override the api_endpoint output for testing/local stubs (e.g. https://example.com)"
+  type        = string
+  default     = ""
+}

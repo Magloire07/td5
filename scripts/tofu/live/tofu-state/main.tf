@@ -6,5 +6,5 @@ module "state" {
   source = "../../modules/state-bucket"
 
   # TODO: fill in your own bucket name!
-  name = "fundamentals-of-devops-tofu-state"
+  name = "kokous-bucket"
 }
